@@ -14,19 +14,14 @@ import com.mendix.systemwideinterfaces.core.IContext;
 public class Microflows
 {
 	// These are the microflows for the YamlJSONConverter module
-	public static void aT_Test(IContext context)
+	public static boolean test_JSONYaml_Petstore(IContext context)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
-		Core.microflowCall("YamlJSONConverter.AT_Test").withParams(params).execute(context);
+		return (java.lang.Boolean) Core.microflowCall("YamlJSONConverter.Test_JSONYaml_Petstore").withParams(params).execute(context);
 	}
-	public static void test_JSONYaml(IContext context)
+	public static boolean test_YamlJSON_Petstore(IContext context)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
-		Core.microflowCall("YamlJSONConverter.Test_JSONYaml").withParams(params).execute(context);
-	}
-	public static void test_YamlJSON(IContext context)
-	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		Core.microflowCall("YamlJSONConverter.Test_YamlJSON").withParams(params).execute(context);
+		return (java.lang.Boolean) Core.microflowCall("YamlJSONConverter.Test_YamlJSON_Petstore").withParams(params).execute(context);
 	}
 }
