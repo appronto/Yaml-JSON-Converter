@@ -2,12 +2,13 @@
 Converts Yaml to JSON and visa versa
 
 ## Dependencies
-jackson-databind-2.12.2.jar
-jackson-core-2.12.2.jar
-jackson-annotations-2.12.2.jar
-jackson-dataformat-yaml-2.12.2.jar
-snakeyaml-1.28.jar
 
+ - jackson-databind-2.12.2.jar 
+ - jackson-core-2.12.2.jar
+ - jackson-annotations-2.12.2.jar 
+ - jackson-dataformat-yaml-2.12.2.jar
+ - snakeyaml-1.28.jar
+ 
 ## Examples
 
 Yaml file like this:
@@ -20,7 +21,7 @@ Yaml file like this:
       type: "SINGLEmalt"
     - id: "_2_id"
       name: "_2_name"
-      description: "2 description"
+      description: "set 2 description"
       type: "BLENDED"
 
 will be converted to a JSON like this:
@@ -34,9 +35,9 @@ will be converted to a JSON like this:
              "type": "SINGLEmalt"
           },
           {
-             "id": "__2_id",
-             "name": "_2_name",
-             "description": "2 description",
+             "id": "__1_id",
+             "name": "_1_name",
+             "description": "1 description",
              "type": "BLENDED"
           }
        ]
