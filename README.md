@@ -1,5 +1,5 @@
 # Yaml-JSON-Converter
-Converts Yaml to JSON and visa versa
+Convert Yaml to JSON and vice versa
 
 ## Dependencies
 jackson-databind-2.12.2.jar
